@@ -40,7 +40,7 @@ hr{
 
 .text {
     text-align: center;
-    font-family: "arial";
+    font-family:Arial, Helvetica, sans-serif
 }
 
 .texto{
@@ -48,6 +48,6 @@ hr{
 }
 
 p{
-    font-family: "palanquin Dark";
-    font-size: large;
+    padding: 2% 5% 2% 5%;
+    font-size:larger;
 }
