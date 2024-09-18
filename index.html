@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cabeçalho">
-        <img src="imagens/tatuando.jpeg" alt="Imagem de fundo" class="imagem-fundo">
-        <img src="imagens/logo.svg" alt="Logo" class="logo">
-    </div>
-    <h1>Conheça a minha história: </h1>
+    <header class="cabecalho">
+        <img src="imagens/tatuando.jpeg" alt="Imagem de fundo com tatuagem" class="imagem-fundo">
+        <img src="imagens/logo.svg" alt="Logo do artista" class="logo">
+    </header>
+    <h1>Conheça a minha história:</h1>
     <hr>
     <div class="texto">
         <p class="text">Olá, eu sou Felipe Lacroes! Estou na cena da tatuagem há mais de 6 anos e sou apaixonado por realismo. Meu trabalho é transformar a pele em uma verdadeira obra de arte, capturando cada detalhe com precisão.</p>
         <p class="text">Desde o começo, meu foco tem sido criar tatuagens que impressionam e contam histórias. Uso técnicas e equipamentos de ponta para garantir que cada peça seja única e exatamente como você imaginou.</p>
         <p class="text">Além de tatuar, adoro conhecer meus clientes e entender suas ideias. Isso me ajuda a criar algo que tenha um significado especial para você. Se você está procurando uma tatuagem incrível e personalizada, venha bater um papo comigo e vamos fazer algo incrível juntos!</p>
     </div>
-    <h1>Conheça um pouco do meu trabalho: </h1>
+    <h2>Conheça um pouco do meu trabalho:</h2>
     <hr>
-
+    <div class="carrossel">
+        <input type="radio" name="carrossel" id="img1" checked>
+        <input type="radio" name="carrossel" id="img2">
+        <input type="radio" name="carrossel" id="img3">
+    
+        <ul>
+            <li><img src="imagens/img1.jpg" alt="Tatuagem 1"></li>
+            <li><img src="imagens/img2.jpg" alt="Tatuagem 2"></li>
+            <li><img src="imagens/img3.jpg" alt="Tatuagem 3"></li>
+        </ul>
+    
+        <button class="btn-trocar" onclick="document.getElementById('img2').checked ? document.getElementById('img3').checked = true : document.getElementById('img2').checked = true">Trocar Imagem</button>
+    </div>
+    
+    
 </body>
 </html>
