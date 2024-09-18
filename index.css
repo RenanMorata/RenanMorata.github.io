@@ -42,73 +42,14 @@ hr {
 
 .text {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "arial";
 }
 
 .texto {
     padding: 2% 14%;
 }
 
-p {
-    font-family: "Palanquin Dark", sans-serif; /* Adicionado fallback */
+p{
+    font-family: "palanquin Dark";
     font-size: large;
-    text-align: center; /* Adicionado aqui para centralizar textos */
-}
-.carrossel {
-    display: block;
-    height: 200px;
-    width: 450px;
-    margin: 15px auto;
-    position: relative;
-}
-
-.carrossel input {
-    display: none; /* Esconde os inputs */
-}
-
-.carrossel ul {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    height: 100%;
-}
-
-.carrossel li {
-    list-style: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s;
-}
-
-.carrossel li img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Mantém a proporção da imagem */
-}
-
-#img1:checked ~ ul li:nth-child(1),
-#img2:checked ~ ul li:nth-child(2),
-#img3:checked ~ ul li:nth-child(3) {
-    opacity: 1;
-    visibility: visible;
-}
-
-.controls {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.btn-trocar {
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #000;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
