@@ -53,3 +53,69 @@ p{
     font-family: "palanquin Dark";
     font-size: large;
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carrossel {
+    display: block;
+    height: 300px; /* Ajuste conforme necessário */
+    width: 450px; /* Ajuste conforme necessário */
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden; /* Para esconder partes da imagem que excedem o contêiner */
+}
+
+.carrossel input {
+    display: none; /* Esconde os inputs */
+}
+
+.carrossel ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+.carrossel li {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+.carrossel li img {
+    height: 100%;
+    width: auto; /* Mantém a proporção real */
+    object-fit: contain; /* Ajusta a imagem dentro do contêiner */
+    max-width: 100%; /* Para evitar que a imagem exceda o contêiner */
+}
+
+#img1:checked ~ ul li:nth-child(1),
+#img2:checked ~ ul li:nth-child(2),
+#img3:checked ~ ul li:nth-child(3) {
+    opacity: 1;
+    visibility: visible;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-trocar {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
