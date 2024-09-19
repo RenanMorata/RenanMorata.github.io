@@ -51,6 +51,7 @@ h2 {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    
 }
 .map-responsive iframe{
     left: 0;
@@ -58,4 +59,12 @@ h2 {
     height: 79%;
     width: 79%;
     position: absolute;
+}
+.redes{
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+}
+.text-redes{
+    text-align: center;
 }
