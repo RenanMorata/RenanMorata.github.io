@@ -64,7 +64,10 @@ h2 {
     justify-content: space-around;
     display: flex;
     margin: auto;
+    width: 200px;
 }
 .text-redes{
     text-align: center;
+    font-size: large;
+    font-weight: bold;
 }
