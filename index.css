@@ -83,7 +83,7 @@ body{
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 195%;
+    top: 190%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
