@@ -48,21 +48,6 @@ h1 {
     font-weight: bold;
 }
 
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 300px; /* Ajuste a altura conforme necessário */
-}
-
-.map-responsive iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
 .redes {
     justify-content: space-around;
     display: flex;
@@ -72,7 +57,7 @@ h1 {
 
 .navegation {
     display: flex;
-    margin-left: 10%;
+    justify-content: center;
 }
 
 .bar {
@@ -90,48 +75,56 @@ h1 {
 }
 
 .content {
-    width: 90%; /* Torna responsivo */
-    max-width: 935px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 90%; 
+    max-width: 935px; 
+    margin: 0 auto; 
     border-radius: 20px;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    width: 100%; /* Mudei de 300% para 100% */
+    width: 100%; 
 }
 
 .slide {
-    flex: 0 0 100%; /* Cada slide ocupará 100% da largura do contêiner */
+    flex: 0 0 100%; 
     transition: 0.6s;
 }
 
 .slide img {
     width: 100%;
-    height: auto; /* Ajusta a altura automaticamente */
+    height: auto; 
 }
 
 input {
     display: none;
 }
 
-/* Estilo para os botões de navegação */
+
 #slide1:checked ~ .s1 {
     margin-left: 0;
 }
 
 #slide2:checked ~ .s1 {
-    margin-left: -100%; /* Corrigido para 100% */
+    margin-left: -100%; 
 }
 
 #slide3:checked ~ .s1 {
-    margin-left: -200%; /* Corrigido para 200% */
+    margin-left: -200%; /
 }
 
 @media (max-width: 768px) {
     .content {
-        width: 90%; /* Ajuste a largura do contêiner em telas menores */
+        width: 90%; 
+    }
+    .map-responsive{
+        height: 300px;
+    }
+}
+@media (min-width: 700px){
+    .map-responsive{
+        height: 800px;
     }
 }
 
